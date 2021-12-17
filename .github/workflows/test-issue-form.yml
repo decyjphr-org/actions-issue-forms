@@ -51,7 +51,10 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: ':x: Sorry, your request could not be processed\n${{steps.themis.outputs.status}}'
+            body: `## :x: Sorry, your request could not be processed successfully
+            
+            Please see below for the errors:
+            ${{steps.themis.outputs.status}}`
             }) 
           } catch(err) {
             throw err
