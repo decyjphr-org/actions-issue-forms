@@ -15,6 +15,28 @@ body:
       Before adding Collaborator to the repos, please refer the
       [Adding collaboratos Guidelines](https://github.com/monalisa/project/issues)
       to see if your request will meet the requirements.
+- type: textarea
+  id: contact_info
+  attributes:
+    label: ">>Contact Info<<"
+    description: |
+      Add the users Corporate email address and full name
+    placeholder: |
+      Example: 
+      email address, first name, last name
+  validations:
+    required: true
+- type: textarea
+  id: justification
+  attributes:
+    label: ">>Justification<<"
+    description: |
+      Add why the user needs access
+    placeholder: |
+      Example: 
+      Joint development on project xxx
+  validations:
+    required: true
 - type: dropdown
   id: permission
   attributes:
