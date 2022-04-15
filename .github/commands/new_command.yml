@@ -6,8 +6,7 @@ title: My command   # <-- 👋 pick a title
 # Works everywhere by default. Uncomment to limit it to certain surfaces.
 surfaces:
   - issue
-  - pull_request
-  - discussions
+
 description: This is an example 
 
 # Each command has one or more steps. You can add up to 25 steps.
