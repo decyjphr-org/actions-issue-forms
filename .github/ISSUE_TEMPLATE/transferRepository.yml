@@ -1,0 +1,57 @@
+name: Transfer a Repository to different Org
+description: Issue Forms to transfer a Repository
+title: "Transfer a Repository"
+labels: ["issueops"]
+assignees:
+  - decyjphr
+body:
+- type: markdown
+  attributes:
+    value: "## Welcome!"
+- type: markdown
+  attributes:
+    value: |
+      Before transferring a repository, please refer the
+      [Transfering a Repository Guidelines](https://github.com/monalisa/project/issues)
+      to see if your request will meet the requirements.
+- type: input
+  id: repo
+  attributes:
+    label: ">>repo<<"
+    description: |
+      Give the repo name.
+    placeholder: |
+      demo-repo
+  validations:
+    required: true
+- type: input
+  id: targetOrg
+  attributes:
+    label: ">>targetOrg<<"
+    description: "Give the target Org."
+    placeholder: |
+      demo-org 
+  validations:
+    required: true
+- type: dropdown
+  id: action
+  attributes:
+    label: ">>action<<"
+    description: "Action"
+    options:
+      - transfer
+    placeholder: |
+      transfer 
+  validations:
+    required: true
+- type: dropdown
+  id: issue_name
+  attributes:
+    label: ">>issue_name<<"
+    description: "This value is used in the action to create the correct type of input object. Needed till we find a better approach"
+    options:
+      - repoinputs
+    placeholder: |
+      repoinputs 
+  validations:
+    required: true  
