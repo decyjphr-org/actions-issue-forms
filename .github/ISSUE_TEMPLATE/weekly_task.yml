@@ -1,0 +1,52 @@
+name: Financial Services Weekly Task
+description: Planning for weekly task
+title: "Weekly Task"
+labels: ["trackwork"]
+assignees:
+  - decyjphr
+  - enyil
+  - jefeish
+body:
+- type: markdown
+  attributes:
+    value: "## What do you want to get done?"
+- type: markdown
+  attributes:
+    value: |
+      Enter a task that you want to get done this week. 
+      It could be customer-deliverable, administrative task, internal team related, etc. 
+- type: textarea
+  id: what-task
+  attributes:
+    label: What is the task?
+    description: Tell us, what did you plan to work on.
+    placeholder: I am working on...
+  validations:
+    required: true
+- type: input
+  id: time
+  attributes:
+    label: >>How many hours will it require<<
+    description: "How many hours will it take to finish the task for this week, not the entire task - just for this week"
+    placeholder: |
+      4 
+  validations:
+    required: true
+- type: textarea
+  id: what-risks
+  attributes:
+    label: What could be the blockers or risks?
+    description: Tell us, what could go wrong.
+    placeholder: I may not be able to get everything done because...
+  validations:
+    required: true
+- type: checkboxes
+  id: demo-planned
+  attributes:
+    label: Is there a demo planned?
+    description: Is there a demo planned?
+    options:
+      - label: Yes demo is planned
+      - label: Is it scheduled>
+  validations:
+    required: true
