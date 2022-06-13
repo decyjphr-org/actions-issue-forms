@@ -26,7 +26,7 @@ body:
 - type: input
   id: time
   attributes:
-    label: >>How many hours will it require<<
+    label: How many hours will it require
     description: "How many hours will it take to finish the task for this week, not the entire task - just for this week"
     placeholder: |
       4 
